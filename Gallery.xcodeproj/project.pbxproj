@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4D4D0072213FAE3A0093302A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0071213FAE3A0093302A /* AppDelegate.swift */; };
-		4D4D0074213FAE3A0093302A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0073213FAE3A0093302A /* ViewController.swift */; };
 		4D4D0077213FAE3A0093302A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4D0075213FAE3A0093302A /* Main.storyboard */; };
 		4D4D0079213FAE3E0093302A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4D0078213FAE3E0093302A /* Assets.xcassets */; };
 		4D4D007C213FAE3E0093302A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4D007A213FAE3E0093302A /* LaunchScreen.storyboard */; };
+		4D4D0085213FAF740093302A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0084213FAF740093302A /* LoginViewController.swift */; };
+		4D4D0087213FB8460093302A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0086213FB8460093302A /* HomeViewController.swift */; };
+		4D4D008B213FC7B70093302A /* Gallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0089213FC7B70093302A /* Gallery.xcdatamodeld */; };
+		4D4D0092213FD25F0093302A /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0090213FD25F0093302A /* UserModel+CoreDataClass.swift */; };
+		4D4D0093213FD25F0093302A /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0091213FD25F0093302A /* UserModel+CoreDataProperties.swift */; };
+		4D4D0095213FE7E60093302A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0094213FE7E60093302A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D4D006E213FAE3A0093302A /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4D0071213FAE3A0093302A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D4D0073213FAE3A0093302A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D4D0076213FAE3A0093302A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D4D0078213FAE3E0093302A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D4D007B213FAE3E0093302A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4D007D213FAE3E0093302A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4D0084213FAF740093302A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D4D0086213FB8460093302A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4D4D008A213FC7B70093302A /* Gallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gallery.xcdatamodel; sourceTree = "<group>"; };
+		4D4D0090213FD25F0093302A /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D4D0091213FD25F0093302A /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D4D0094213FE7E60093302A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		4D4D0070213FAE3A0093302A /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				4D4D0088213FC7680093302A /* Model */,
+				4D4D0083213FAF4C0093302A /* ViewController */,
 				4D4D0071213FAE3A0093302A /* AppDelegate.swift */,
-				4D4D0073213FAE3A0093302A /* ViewController.swift */,
 				4D4D0075213FAE3A0093302A /* Main.storyboard */,
 				4D4D0078213FAE3E0093302A /* Assets.xcassets */,
 				4D4D007A213FAE3E0093302A /* LaunchScreen.storyboard */,
 				4D4D007D213FAE3E0093302A /* Info.plist */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		4D4D0083213FAF4C0093302A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D4D0084213FAF740093302A /* LoginViewController.swift */,
+				4D4D0086213FB8460093302A /* HomeViewController.swift */,
+				4D4D0094213FE7E60093302A /* ProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4D4D0088213FC7680093302A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D4D0090213FD25F0093302A /* UserModel+CoreDataClass.swift */,
+				4D4D0091213FD25F0093302A /* UserModel+CoreDataProperties.swift */,
+				4D4D0089213FC7B70093302A /* Gallery.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D4D0074213FAE3A0093302A /* ViewController.swift in Sources */,
+				4D4D008B213FC7B70093302A /* Gallery.xcdatamodeld in Sources */,
+				4D4D0085213FAF740093302A /* LoginViewController.swift in Sources */,
+				4D4D0092213FD25F0093302A /* UserModel+CoreDataClass.swift in Sources */,
 				4D4D0072213FAE3A0093302A /* AppDelegate.swift in Sources */,
+				4D4D0095213FE7E60093302A /* ProfileViewController.swift in Sources */,
+				4D4D0093213FD25F0093302A /* UserModel+CoreDataProperties.swift in Sources */,
+				4D4D0087213FB8460093302A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D4D0089213FC7B70093302A /* Gallery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D4D008A213FC7B70093302A /* Gallery.xcdatamodel */,
+			);
+			currentVersion = 4D4D008A213FC7B70093302A /* Gallery.xcdatamodel */;
+			path = Gallery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D4D0066213FAE3A0093302A /* Project object */;
 }

@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let status = UserDefaults.standard.bool(forKey: "isLogin")
+        
+        if status {
+            let rootView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tab") as! UITabBarController
+
+            self.window?.rootViewController = rootView
+        } else {
+            let rootView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login") as! LoginViewController
+            
+            self.window?.rootViewController = rootView
+        }
+        
         return true
     }
 
