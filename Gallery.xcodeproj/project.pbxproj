@@ -17,6 +17,9 @@
 		4D4D0092213FD25F0093302A /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0090213FD25F0093302A /* UserModel+CoreDataClass.swift */; };
 		4D4D0093213FD25F0093302A /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0091213FD25F0093302A /* UserModel+CoreDataProperties.swift */; };
 		4D4D0095213FE7E60093302A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0094213FE7E60093302A /* ProfileViewController.swift */; };
+		4D4D0099213FEBEF0093302A /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D0097213FEBEF0093302A /* GalleryCell.swift */; };
+		4DE933EB214021A000099D89 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE933EA214021A000099D89 /* PageContentViewController.swift */; };
+		4DE9340D214026BB00099D89 /* ImagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9340C214026BB00099D89 /* ImagePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		4D4D0090213FD25F0093302A /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D4D0091213FD25F0093302A /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4D4D0094213FE7E60093302A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D4D0097213FEBEF0093302A /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		4DE933EA214021A000099D89 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		4DE9340C214026BB00099D89 /* ImagePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		4D4D0070213FAE3A0093302A /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				4D4D0096213FEBBA0093302A /* Cell */,
 				4D4D0088213FC7680093302A /* Model */,
 				4D4D0083213FAF4C0093302A /* ViewController */,
 				4D4D0071213FAE3A0093302A /* AppDelegate.swift */,
@@ -81,6 +88,8 @@
 				4D4D0084213FAF740093302A /* LoginViewController.swift */,
 				4D4D0086213FB8460093302A /* HomeViewController.swift */,
 				4D4D0094213FE7E60093302A /* ProfileViewController.swift */,
+				4DE933EA214021A000099D89 /* PageContentViewController.swift */,
+				4DE9340C214026BB00099D89 /* ImagePageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -93,6 +102,14 @@
 				4D4D0089213FC7B70093302A /* Gallery.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4D4D0096213FEBBA0093302A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D4D0097213FEBEF0093302A /* GalleryCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +186,11 @@
 				4D4D008B213FC7B70093302A /* Gallery.xcdatamodeld in Sources */,
 				4D4D0085213FAF740093302A /* LoginViewController.swift in Sources */,
 				4D4D0092213FD25F0093302A /* UserModel+CoreDataClass.swift in Sources */,
+				4DE9340D214026BB00099D89 /* ImagePageViewController.swift in Sources */,
 				4D4D0072213FAE3A0093302A /* AppDelegate.swift in Sources */,
+				4D4D0099213FEBEF0093302A /* GalleryCell.swift in Sources */,
 				4D4D0095213FE7E60093302A /* ProfileViewController.swift in Sources */,
+				4DE933EB214021A000099D89 /* PageContentViewController.swift in Sources */,
 				4D4D0093213FD25F0093302A /* UserModel+CoreDataProperties.swift in Sources */,
 				4D4D0087213FB8460093302A /* HomeViewController.swift in Sources */,
 			);

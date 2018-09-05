@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginViewController: UIViewController {
 
@@ -19,31 +20,39 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func onClickLogin(_ sender: UIButton) {
         if emailField.text == "" || passwordField.text == "" {
             let alert = UIAlertController(title: "Error", message: "Please input email and password!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true)
+        } else {
+            guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+                    return
+            }
+            
+            let managedContext =
+                appDelegate.persistentContainer.viewContext
+            
+            let entity =
+                NSEntityDescription.entity(forEntityName: "UserModel",
+                                           in: managedContext)!
+            
+            let model = NSManagedObject(entity: entity,
+                                        insertInto: managedContext)
+            
+            model.setValue(self.emailField.text, forKeyPath: "email")
+            model.setValue(self.passwordField.text, forKey: "password")
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+            
+            UserDefaults.standard.set(true, forKey: "isLogin")
+            
+            self.performSegue(withIdentifier:"successLogin", sender: nil)
         }
-        
-        UserDefaults.standard.set(true, forKey: "isLogin")
-        
-        self.performSegue(withIdentifier:"successLogin", sender: nil)
     }
 }
